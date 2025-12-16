@@ -133,7 +133,8 @@ nav
         text-decoration: none
         &:hover
             text-decoration: underline
-        
+    > div.search-button:hover
+        background-color: #fff
 
 .logo
     cursor: pointer
@@ -439,7 +440,10 @@ p.view-all-btn
                     :last-child
                         align-self: end
                         margin-right: 14px
-                        
+                        cursor: pointer
+                        transition: 0.3s ease-out
+                        &:hover 
+                            margin-top: -4px
                     .heading
                         width: 293px
                         margin: 13.5px 0 0 20px
