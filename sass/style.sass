@@ -3,6 +3,7 @@
 
 html, body
     transform: none !important
+    overflow-x: hidden
 
 @font-face 
     font-family: 'Ysabeau Infant SB'
@@ -66,6 +67,7 @@ a
     font-size: 20px
     cursor: pointer
     z-index: 1
+    transition: background-color 0.3s ease-out
 
 #scrollTopBtn:hover 
     background-color: #555
@@ -82,6 +84,7 @@ a
     font-size: 21px
     border: none
     border-radius: 15px
+    transition: background-color 0.3s ease-out
 .button-large:hover
     background-color: #d09234
 
@@ -97,6 +100,7 @@ a
     border-radius: 15px
     font-family: 'Ysabeau Infant M'
     font-size: 18px
+    transition: background-color 0.3s ease-out
 .button-1:hover
     background-color: #4d8617
 
@@ -113,6 +117,7 @@ a
     background-color: rgba(239, 66, 0, 1)
     border: none
     border-radius: 15px
+    transition: background-color 0.3s ease-out
 .button-2:hover
     background-color: #cf3b00
 
@@ -124,8 +129,11 @@ nav
     justify-content: space-between
     align-items: center
     margin-left: 18px
-    p
-        cursor: pointer
+    a
+        text-decoration: none
+        &:hover
+            text-decoration: underline
+        
 
 .logo
     cursor: pointer
@@ -149,6 +157,7 @@ header
             border: 1px solid black
             border-radius: 10px
             cursor: pointer
+            transition: background-color 0.3s
             &__icon
                 width: 25px
         .seperator
@@ -158,8 +167,6 @@ header
             width: 175px
             justify-content: space-between
             > div
-                cursor: pointer
-            & > div
                 display: flex
                 justify-content: center
                 align-items: center
@@ -168,6 +175,10 @@ header
                 background-color: #fff
                 border: 2px solid rgba(89, 156, 27, 1)
                 border-radius: 10px
+                cursor: pointer
+                transition: background-color 0.3s
+            > :hover
+                background-color: #ededed
 
 .first-section
     &__container
@@ -329,9 +340,12 @@ header
 
 p.view-all-btn
     font-family: 'Ysabeau Infant SB'
-    opacity: 70%
+    opacity: 60%
     margin-top: 24px 
     cursor: pointer
+    transition: opacity 0.3s ease-out
+    &:hover
+        opacity: 100%
 
 .fifth-section
     .view-all-btn
@@ -555,4 +569,9 @@ footer
                 img
                     width: 48px
                     height: 48px
-                    cursor: pointer
+                    cursor: pointer 
+                    transition: border-bottom 0.3s ease-out
+                    border-bottom: 0.1px solid rgba(252, 176, 64, 1)
+                    &:hover
+                        border-bottom: 7px solid rgba(252, 176, 64, 1)
+
